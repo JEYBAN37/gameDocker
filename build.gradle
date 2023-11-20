@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    mavenCentral() // Puedes cambiar esto a tu repositorio preferido
+}
+
+dependencies {
+    implementation 'mysql:mysql-connector-java:8.0.25'
+    // Aquí puedes agregar otras dependencias si es necesario
+}
+
+application {
+    mainClass = 'org.example.Main' // Reemplaza con tu clase principal
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'org.example.Main',
+                'Class-Path': configurations.compileClasspath.files.collect { it.getName() }.join(' ')
+        )
+    }
+    from {
+        configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
