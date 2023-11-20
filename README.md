@@ -1,12 +1,12 @@
-# DockerFile Example Java Gradlew and Mysql wiht PHPMyAdmin 
+# DockerFile Example Java Gradlew and Mysql with PHPMyAdmin 
 
-Descripción breve del proyecto.
+For my finally project of University in Distribute System compile DockerCompose services Whith Dockerfile,MySQL and manager PHPMyAdmin.
 
-## Instalación
+## Install
 
-Asegúrate de tener instalado [Prerequisito 1] y [Prerequisito 2].
+Asegúrate de tener instalado JDK17 y Docker.
 
 ```bash
-git clone https://github.com/tu-usuario/tu-proyecto.git
-cd tu-proyecto
-npm install  # o el comando necesario para instalar dependencias
+git clone https://github.com/JEYBAN37/gameDocker.git
+cd gameDocker
+docker-compose up   # o el comando necesario para instalar dependencias
