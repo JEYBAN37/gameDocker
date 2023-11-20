@@ -8,6 +8,8 @@ services:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: notSecure
+    mem_limit: 512m  # Limitar la memoria a 512 MB
+    cpus: 1.0   # Asignar la mitad de un núcleo de CPU
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -18,6 +20,9 @@ services:
       PMA_HOST: mysql
       PMA_PORT: 3306
       MYSQL_ROOT_PASSWORD: notSecure
+    mem_limit: 512m  # Limitar la memoria a 512 MB
+    cpus: 0.5   # Asignar la mitad de un núcleo de CPU
+
   app:
     build:
       context: .
@@ -26,3 +31,5 @@ services:
     tty: true
     ports:
       - "8081:8080"
+    mem_limit: 512m  # Limitar la memoria a 512 MB
+    cpus: 0.5   # Asignar la mitad de un núcleo de CPU
