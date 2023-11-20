@@ -60,7 +60,7 @@ ve al contenedor llamado gamedocker-app-1 y observa la consola.
 
 ![Logo de mi proyecto](readmeEvidence/fiveImage.PNG)
 
-compara los atributos del personaje que se muestran en pantalla con lo que se muestran en la base de datos y verifica si el funcionamiento es correcto.
+compara los atributos del personaje que se muestran en pantalla con lo que se muestran en la tabla "personage" de la base de datos y verifica si el funcionamiento es correcto.
 
 
 
