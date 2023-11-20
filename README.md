@@ -6,7 +6,14 @@ For my finally project of University in Distribute System compile DockerCompose 
 
 Asegúrate de tener instalado JDK17 y Docker.
 
+Clona el Repositorio.
+
 ```bash
 git clone https://github.com/JEYBAN37/gameDocker.git
 cd gameDocker
-docker-compose up   # o el comando necesario para instalar dependencias
+```
+Ejecuta en el bash el Comando.
+```bash
+docker-compose up
+```
+
